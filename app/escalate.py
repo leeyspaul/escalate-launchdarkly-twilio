@@ -59,6 +59,7 @@ class TwilioEscalate:
 
         if lower_threshold_escalation_feature:
             self._lower_threshold_escalation_ping(text)
+            return
 
         self._higher_threshold_escalation_ping(text)
 
